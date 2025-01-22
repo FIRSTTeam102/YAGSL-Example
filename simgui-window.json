@@ -6,11 +6,11 @@
     "GLOBAL": {
       "font": "Proggy Dotted",
       "fps": "120",
-      "height": "910",
+      "height": "1094",
       "maximized": "1",
       "style": "0",
       "userScale": "2",
-      "width": "1280",
+      "width": "1920",
       "xpos": "0",
       "ypos": "34"
     }
@@ -19,32 +19,32 @@
     "###/FMSInfo": {
       "Collapsed": "0",
       "Pos": "227,43",
-      "Size": "244,221"
+      "Size": "254,221"
     },
     "###/SmartDashboard/Field": {
       "Collapsed": "0",
-      "Pos": "425,181",
-      "Size": "457,373"
+      "Pos": "122,176",
+      "Size": "1447,667"
     },
     "###FMS": {
       "Collapsed": "0",
-      "Pos": "724,388",
-      "Size": "244,244"
+      "Pos": "1123,871",
+      "Size": "235,244"
     },
     "###Joysticks": {
       "Collapsed": "0",
-      "Pos": "86,633",
+      "Pos": "80,790",
       "Size": "1156,310"
     },
     "###Keyboard 0 Settings": {
-      "Collapsed": "1",
-      "Pos": "29,563",
+      "Collapsed": "0",
+      "Pos": "1571,486",
       "Size": "300,560"
     },
     "###NetworkTables": {
       "Collapsed": "0",
-      "Pos": "588,669",
-      "Size": "750,236"
+      "Pos": "1373,120",
+      "Size": "509,236"
     },
     "###NetworkTables Info": {
       "Collapsed": "1",
@@ -74,7 +74,7 @@
     "Robot State": {
       "Collapsed": "0",
       "Pos": "7,20",
-      "Size": "137,152"
+      "Size": "137,32"
     }
   }
 }
