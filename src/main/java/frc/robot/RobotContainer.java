@@ -165,7 +165,7 @@ public class RobotContainer
     }
     if (DriverStation.isTest())
     {
-      drivebase.setDefaultCommand(driveRobotOrientAngularVelocity); // Overrides drive command above!
+      drivebase.setDefaultCommand(driveFieldOrientedAnglularVelocity); // Overrides drive command above!
 
     driverXbox.b().whileTrue(drivebase.sysIdDriveMotorCommand());
     //  driverXbox.b().whileTrue(
@@ -178,10 +178,12 @@ public class RobotContainer
       driverXbox.start().onTrue((Commands.runOnce(drivebase::zeroGyro)));
       driverXbox.back().whileTrue(drivebase.centerModulesCommand());
       driverXbox.leftBumper().onTrue(Commands.none());
-      driverXbox.rightTrigger().whileTrue(Commands.none());
+      driverXbox.rightTrigger().whileTrue(drivebase.driveRobotOriented(driveAngularVelocity));
     } else
     {
       driverXbox.x().onTrue(Commands.runOnce(drivebase::addFakeVisionReading));
+      driverXbox.rightTrigger().whileTrue(drivebase.driveRobotOriented(driveAngularVelocity));
+
       driverXbox.b().whileTrue(
           drivebase.driveToPose(
               new Pose2d(new Translation2d(4, 4), Rotation2d.fromDegrees(0)))
