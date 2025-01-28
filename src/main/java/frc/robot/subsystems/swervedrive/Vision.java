@@ -356,11 +356,11 @@ public class Vision
     /**
      * Center Camera
      */
-    CENTER_CAM("center",
-               new Rotation3d(0, Units.degreesToRadians(18), 0),
-               new Translation3d(Units.inchesToMeters(-4.628),
-                                 Units.inchesToMeters(-10.687),
-                                 Units.inchesToMeters(16.129)),
+    CENTER_CAM("photonvision",
+               new Rotation3d(0, Units.degreesToRadians(20), 20),
+               new Translation3d(Units.inchesToMeters(-7.435273),
+                                 Units.inchesToMeters(-7.435273),
+                                 Units.inchesToMeters(4)),
                VecBuilder.fill(4, 4, 8), VecBuilder.fill(0.5, 0.5, 1));
 
     /**
